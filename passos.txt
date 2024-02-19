@@ -1,5 +1,5 @@
 Configurando o git
-git config --global user.name @gibelch007
+git config --global user.name gibelch007
 git config --global user.email giovanaferrodrigues@gmail.com
 
 Criar o projeto 
