@@ -14,3 +14,22 @@ Pesquisar e Instalar:
 -EntityFrameworkCore.Design
 -EntityFrameworkCore.InMemory
 -AspNet.Identity.EntityFrameworkCore
+
+Confeirir se há erros :
+dotnet build
+
+Instalar ferramenta geração de código
+dotnet tool install -g dotnet-aspnet-codegenerator --version 8.0.1
+
+Gerar Controller e Views de CRUD: 
+dotnet-aspnet-codegenerator controller -name CoresController -m Cor -dc AppDbContext -udl --relativeFolderPath Controllers
+dotnet-aspnet-codegenerator controller -name TamanhosController -m Tamanho -dc AppDbContext -udl --relativeFolderPath Controllers
+dotnet-aspnet-codegenerator controller -name CategoriasController -m Categoria -dc AppDbContext -udl --relativeFolderPath Controllers
+
+Pressione Ctrl + Shift + P 
+Digite : Nuget
+
+Pesquisar e Instalar:
+Microsoft.VisualStudio.Web.CodeGeneration.Design
+Microsoft.EntityFrameworkCore.tools
+Microsoft.EntityFrameworkCore.SqlServer
