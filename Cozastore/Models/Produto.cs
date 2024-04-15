@@ -34,7 +34,7 @@ namespace Cozastore.Models;
         [Display(Name ="Preço com Desconto")]
         [Column(TypeName = "decimal(8,2)")]//9.999.999,99
         [Required(ErrorMessage = " Por favor, informe o Preço com Desconto")]
-        public decimal Precodesconto {get; set;}
+        public decimal PrecoDesconto {get; set;}
 
         [Display(Name ="Produto em Destaque?")]
 
